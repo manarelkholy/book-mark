@@ -1,0 +1,201 @@
+body{
+    background-color: #F6ECDE;
+  }
+  
+  ::selection {
+    background:  #FEC260;
+  }
+  *{
+    text-decoration: none !important;
+  }
+  
+  h1{
+    color: RGB(53, 46, 40);
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    position: relative;
+    display: inline-block;
+  }
+  h1::before{
+    z-index: -1;
+    content: "";
+    position: absolute;
+    bottom: 15%; 
+    left:50%;
+    transform: translateX(-50%);
+    height: 15px;
+    width:265px;
+    background-color: #FEC260;
+    transition: all 0.5s;
+  }
+  h1:hover::before{
+    height: 30px;
+  }
+  
+  
+  .inputs  h2 span{
+    font-size: 25px;
+    background-image: -webkit-gradient(linear ,right top, left top ,from(#B2AC49), to(#41A55B));
+    background-image: -o-linear-gradient(right ,#B2AC49, #41A55B);
+    background-image: linear-gradient(to left ,#B2AC49, #41A55B);
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    font-family: 'Righteous', sans-serif;
+   
+  }
+  
+  .inputs{
+    border-top: black dotted 2px;
+    border-bottom: black dotted 2px;
+    padding-block: 20px;
+  }
+  
+  
+  .inputs i {
+    top: 5px;
+    font-size:25px;
+    vertical-align: middle;
+  }
+  
+  .inputs .icon2{
+    color:#B2AC49;
+   
+  }
+  .inputs .icon1{
+    color: #41A55B;
+  }
+  .inputs label{
+    color: RGB(33, 37, 41);
+    display: block ;
+    text-align: start;
+    margin-top: 25px;
+  }
+  .inputs label span {
+    font-weight: 700;
+    padding-left: 7px;
+    font-family: 'PT Sans Caption', sans-serif;
+  }
+  .inputs label i{
+    font-size: 16px;
+  }
+  
+  .inputs input{
+    border: #fec16000 solid 1px;
+    outline: 4px solid #fec16000 ;
+  }
+  input:focus{
+    border: #FEC260 solid 1px;
+    outline: 4px solid #fec16076 ;
+  }
+  
+  
+  .input-container {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .input-icon {
+    position: absolute;
+    top:  100%;
+    right: 13px;
+    transform: translateY(50%);
+  }
+  
+  #icon-check ,#icon-checkUrl{
+    color: green;
+    bottom: 50%;
+    font-size:25px;
+  
+  }
+  #icon-error,#icon-errorUrl{
+    bottom: 40%;
+    font-size: 20px;
+    color: red;
+  }
+  
+  .inputs button{
+    background-color: #BB4120;
+    border : none;
+  }
+  .inputs button:hover{
+    background-color: #c5431f;
+  }
+  table th , table td {
+    font-family: 'PT Sans Caption', sans-serif;
+  }
+  
+  table a{
+    color: white;
+  }
+  table span{
+    padding-left: 4px;
+  }
+  
+  table .visit { 
+    color: white;
+    border: none;
+    background-color: #a6bf2b;
+  }
+  table .visit:hover{
+    background-color: #8A9E23;
+  }
+  
+  table .delete { 
+    color: white;
+    border: none;
+    background-color: #dd2d3c;
+  }
+  table .delete:hover{
+    background-color: #D31120;
+  }
+  
+  
+  .light-box{
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background-color: rgba(0, 0, 1, 0.503);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contin-data{
+    background-color: white;
+    width: 30%;
+  }
+  
+  #exit{
+     cursor: pointer;
+  }
+  
+  @media screen and (max-width : 1550px){
+    .contin-data{
+      width:40%;
+    }
+  }
+  @media screen and (max-width : 1160px){
+    .contin-data{
+      width:50%;
+    }
+  }
+  
+  @media screen and (max-width : 750px) {
+    .contin-data{
+      width:60%;
+    }
+  }
+  
+  @media screen and (max-width : 570px) {
+    .contin-data{
+      width:80%;
+    }
+  }
+  @media screen and (max-width : 425px) {
+    .contin-data{
+      width:98%;
+    }
+  }
